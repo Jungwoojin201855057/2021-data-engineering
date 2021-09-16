@@ -1,1 +1,151 @@
+"""
+print() funtion
+"""
 
+print("Hello World!")
+print(100)
+pi = 3.14
+print(pi)
+
+intro = "My name is "
+name = "Woo jin"
+print(intro + name + "!")
+
+"""
+variables
+"""
+
+Comment or annotation
+Define a name
+
+user_name = "woo jin jung "
+user_id = 201855057
+user_age = 23
+print("my name is:",user_name)
+print("my id is:",user_id)
+print("my age is",user_age)
+
+"""
+Data Types: Integers
+"""
+
+집에 있는 사물의 객수를 세 가지 이상의 정수 변수로 표현하시오.
+
+computer = 2
+cup = 1
+phone = 1
+tables = 1
+broken_computer = 1
+
+"""
+Data Types: Real Numbers
+"""
+
+본인이 알고 있는 세 개의 실수를 변수로 정의하시오.
+
+i_phone_12pro_size_high = 14.3
+i_phone_12pro_size_wide = 7.4
+PI = 3.14
+My_tall = 173.2
+
+print(i_phone_12pro_size_high)
+print(i_phone_12pro_size_wide)
+print(PI)
+print(My_tall)
+
+"""
+Data Types: Strings
+"""
+
+favorite_game = "league of legend"
+favorite_friend = "S.J"
+favorite_number = "32"
+
+본인이 좋아하는 세 가지를 문자열로 정의하시오.
+
+print(" favorite game is:",favorite_game + " favorite friend is:", favorite_friend + " favorite number is:", favorite_number + "!")
+
+counter = 0
+counter += 10
+print(counter)
+
+"""
+x-Equals Operations
+"""
+
+x = 4
+x *= 4
+x += 8
+print(x)
+
+
+"""
+Boolean Values
+"""
+
+is_tested = True
+is_passed = False
+
+print("우진이는 정처기 시험을 응시했는가?",is_tested)
+
+print("우진이는 정처기 시험을 통과했는가?",is_passed)
+
+print(type(is_passed))
+
+a = 3
+b = 3.14
+c = 'c'
+print(type(a))
+print(type(b))
+print(type(c))
+
+print("Yes" == 'Yes')
+print((2>1) == (5<10))
+c ='2'
+d = 2
+print(c == d)
+
+True or True # True
+True or False # True
+False or False # Flase
+1 < 2 or 3 < 1 # True
+3 < 1 or 1 > 6 # Flase
+1 == 1 or 1 < 2 # True
+
+"""
+Conditional statement (if/elif/else)
+"""
+
+puppy = "mts"
+age = 1
+is_yes = False
+
+if puppy == "mts":
+print("말티즈.")
+is_yes = True
+
+if age < 3:
+    print("새끼 말티즈")
+
+
+elif puppy == "pd":
+print("푸들")
+is_yes = True
+elif puppy == "sc":
+print("시츄")
+is_yes = True
+else:
+print("아! mtp구나")
+is_yes = True
+print(is_yes)
+
+"""
+Try/Except 문
+"""
+x = 1
+try:
+print(y)
+print(x)
+except:
+print('[Error]')
+print("contiue")
