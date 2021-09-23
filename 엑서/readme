@@ -149,3 +149,127 @@ print(x)
 except:
 print('[Error]')
 print("contiue")
+
+"""
+Lists
+"""
+
+primes = [2,3,5,7,11]
+print(primes)
+
+empty_list = []
+print(empty_list)
+
+"""
+Mulriple different data types
+"""
+
+mixed = ['Jenny',1,1.4,True]
+print(mixed)
+list_of_lists = [['a',1],['b',2]]
+print(list_of_lists)
+
+"""
+Zero-Indexing
+"""
+
+names = ['Woojin','Jinwoo','Ssuckjin','jungyup']
+print(names[0])
+print(names[1])
+print(names[2])
+print(names[3])
+
+"""
+Negative Indices
+"""
+print(names[-1]) #(-1)>Last data
+print(names[-2]) 
+print(names[-3])
+print(names[-4])
+
+"""
+List Slicing
+"""
+
+numbers = ['1','2','3','4','5','6','7']
+select_numbers = numbers[1:4]
+print(numbers[2:])
+print(numbers[:4])
+print(numbers[:])
+print(select_numbers)
+
+hsu_buildings = ['만우관','장공관','필헌관','소통관','송암관','늦봄관','장준하통일관']
+building_slice = hsu_buildings[1:4]
+print(hsu_buildings[2:])
+print(hsu_buildings[:4])
+print(hsu_buildings[:])
+print(building_slice)
+
+"""
+Dimensional List
+"""
+restaurants = [['해우리','한식','고S'],['짜장명가','중식','중화비빔밤'],['찌개동아리','한식','제육전골'],['맘스터치','양식','싸이버거']]
+print(restaurants)
+
+print(restaurants[1][1])
+restaurants[0][2] = '해우라면'
+print(restaurants[0][2])
+print(restaurants)
+
+"""
+Adding Lists Together
+"""
+
+items_one = ['cake','cookie','bread']
+items_two = ['biscuit','tart']
+
+total_items = items_one + items_two
+print(total_items)
+
+"""
+Useful Methods for Lists
+"""
+
+#Len()은 리스트의 크기(개수)를 나타냄
+Knapsack = [2,4,3,7,10]
+size = len(Knapsack)
+print(size)
+
+#count()는 특정 아이템의 개수를 나타냄
+backpack = ['pencil','pen','notebook','textbook','pen','highlighter','pen']
+numPen = backpack.count('pen') #count는 아이템의 개수를 나타냄
+print(numPen)
+
+#append()는 리스트의 끝에 아이템 추가
+orders = ['daisies','periwinkle']
+orders.append('tulips') 
+print(orders)
+
+#insert()는 특정 위치에 아이템을 추가
+store_line = ['Karla','Maxium','Martin','Isabella']
+store_line.insert(2,'Woojin') 
+print(store_line)
+
+#pop()은특정 위치의 아이템을 삭제
+sw_subjexts = ['C Programming','Calculus','Data Engineering','Data Structures','Machine Learning']
+sw_subjexts.pop(1)
+sw_subjexts.pop() #NULL은 리스트의 마지막 아이템을 삭제
+sw_subjexts.remove('Data Structures')#특정 아이템만 삭제
+print(sw_subjexts)
+
+#sort()는 정렬시켜줌
+numbers =[4,2,1,5,6,3]
+print(numbers)
+numbers.sort()
+print(numbers)
+
+hsu_buildings = ['만우관','장공관','필헌관','소통관','송암관','늦봄관','장준하통일관']
+print(hsu_buildings)
+hsu_buildings.sort()
+print(hsu_buildings)
+
+#sorted()는 원본 리스트를 유지시킬 수 있음
+names = ['Woojin','Jinwoo','Ssuckjin','jungyup']
+print(names)
+sorted_names = sorted(names)
+print(sorted_names)
